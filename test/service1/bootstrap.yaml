@@ -1,18 +1,21 @@
-spring:
-  cloud:
-    refresh:
-      enabled: true #启用刷新配置
-  application:
-    name: service # 这里必须先告诉注册中心自己主机名称
-#配置拉取
-eureka:
-  client:
-    service-url:
-      {slb-service-zone:http://eureka-service:8761/eureka/} #配置zone 以及注册中心地址，线上环境使用主机名
-hystrix:
-    metrics:
-      enabled: true #启用熔断监测
-ribbon:
-  restclient:
-    enabled: true
-  
+#spring:
+#  cloud:
+#    refresh:
+#      enabled: true #启用刷新配置
+#  application:
+#    name: service # 这里必须先告诉注册中心自己主机名称
+##配置拉取
+#eureka:
+#  client:
+#    service-url:
+#      {slb-service-zone:http://eureka-service:8761/eureka/} #配置zone 以及注册中心地址，线上环境使用主机名
+#hystrix:
+#    metrics:
+#      enabled: true #启用熔断监测
+#ribbon:
+#  restclient:
+#    enabled: true
+#
+custom:
+ test: 1234
+ 

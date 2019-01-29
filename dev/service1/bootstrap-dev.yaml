@@ -9,9 +9,9 @@ eureka:
   client:
     service-url:
       {slb-service-zone:http://eureka-service:8761/eureka/} #配置zone 以及注册中心地址，线上环境使用主机名
-hystrix:
-    metrics:
-      enabled: true #启用熔断监测
+#hystrix:
+#    metrics:
+#      enabled: true #启用熔断监测
 ribbon:
   restclient:
     enabled: true
